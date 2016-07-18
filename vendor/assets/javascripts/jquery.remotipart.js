@@ -43,7 +43,6 @@
 
           // Modify some settings to integrate JS request with rails helpers and middleware
           if (settings.dataType === undefined) { settings.dataType = 'script *'; }
-          settings.data.push({name: 'remotipart_submitted', value: true});
           if (csrfToken && csrfParam && !csrfInput) {
             settings.data.push({name: csrfParam, value: csrfToken});
           }
